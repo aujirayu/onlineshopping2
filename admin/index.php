@@ -21,13 +21,13 @@ include "topheader.php";
                 <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">
-                <h4 class="card-title"> Users List</h4>
+                <h4 class="card-title">รายชื่อสมาชิก</h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive ps">
                   <table class="table table-hover tablesorter " id="">
                     <thead class=" text-primary">
-                        <tr><th>ID</th><th>FirstName</th><th>LastName</th><th>Email</th><th>Password</th><th>Contact</th><th>Address</th><th>City</th>
+                        <tr><th>รหัสสมาชิก</th><th>ชื่อ</th><th>นามสกุล</th><th>อีเมลล์</th><th>รหัสผ่าน</th><th>เบอร์โทร</th><th>ที่อยู่</th><th>จังหวัด</th>
                     </tr></thead>
                     <tbody>
                       <?php 
@@ -46,103 +46,8 @@ include "topheader.php";
               </div>
             </div>
           </div>
-           <div class="row">
-            <div class="col-md-6">
-            <div class="card ">
-              <div class="card-header card-header-primary">
-                <h4 class="card-title"> Categories List</h4>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive ps">
-                  <table class="table table-hover tablesorter " id="">
-                    <thead class=" text-primary">
-                        <tr><th>ID</th><th>Categories</th><th>Count</th>
-                    </tr></thead>
-                    <tbody>
-                      <?php 
-                        $result=mysqli_query($con,"select * from categories")or die ("query 1 incorrect.....");
-                        $i=1;
-                        while(list($cat_id,$cat_title)=mysqli_fetch_array($result))
-                        {	
-                            $sql = "SELECT COUNT(*) AS count_items FROM products WHERE product_cat=$i";
-                            $query = mysqli_query($con,$sql);
-                            $row = mysqli_fetch_array($query);
-                            $count=$row["count_items"];
-                            $i++;
-                        echo "<tr><td>$cat_id</td><td>$cat_title</td><td>$count</td>
 
-                        </tr>";
-                        }
-                        ?>
-                    </tbody>
-                  </table>
-                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card ">
-              <div class="card-header card-header-primary">
-                <h4 class="card-title">Brands List</h4>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive ps">
-                  <table class="table table-hover tablesorter " id="">
-                    <thead class=" text-primary">
-                        <tr><th>ID</th><th>Brands</th><th>Count</th>
-                    </tr></thead>
-                    <tbody>
-                      <?php 
-                        $result=mysqli_query($con,"select * from brands")or die ("query 1 incorrect.....");
-                        $i=1;
-                        while(list($brand_id,$brand_title)=mysqli_fetch_array($result))
-                        {	
-                            
-                            $sql = "SELECT COUNT(*) AS count_items FROM products WHERE product_brand=$i";
-                            $query = mysqli_query($con,$sql);
-                            $row = mysqli_fetch_array($query);
-                            $count=$row["count_items"];
-                            $i++;
-                        echo "<tr><td>$brand_id</td><td>$brand_title</td><td>$count</td>
-
-                        </tr>";
-                        }
-                        ?>
-                    </tbody>
-                  </table>
-                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-              </div>
-            </div>
-          </div>
-           </div>
-           <div class="col-md-5">
-            <div class="card ">
-              <div class="card-header card-header-primary">
-                <h4 class="card-title">Subscribers</h4>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive ps">
-                  <table class="table table-hover tablesorter " id="">
-                    <thead class=" text-primary">
-                        <tr><th>ID</th><th>email</th>
-                    </tr></thead>
-                    <tbody>
-                      <?php 
-                        $result=mysqli_query($con,"select * from email_info")or die ("query 1 incorrect.....");
-
-                        while(list($brand_id,$brand_title)=mysqli_fetch_array($result))
-                        {	
-                        echo "<tr><td>$brand_id</td><td>$brand_title</td>
-
-                        </tr>";
-                        }
-                        ?>
-                    </tbody>
-                  </table>
-                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-              </div>
-            </div>
-          </div>
+       
            
             
           

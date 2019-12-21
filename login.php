@@ -64,7 +64,7 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
 			
             exit;
 
-		}else{
+	}else{
                 $email = mysqli_real_escape_string($con,$_POST["email"]);
                 $password =md5($_POST["password"]) ;
                 $sql = "SELECT * FROM admin_info WHERE admin_email = '$email' AND admin_password = '$password'";
@@ -72,7 +72,7 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
                 $count = mysqli_num_rows($run_query);
 
             //if user record is available in database then $count will be equal to 1
-            if($count == 1){
+            if($count != 1){
                 $row = mysqli_fetch_array($run_query);
                 $_SESSION["uid"] = $row["admin_id"];
                 $_SESSION["name"] = $row["admin_name"];
@@ -81,13 +81,13 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
 
 
                     //if user is login from page we will send login_success
-                    echo "login_success";
+                    echo "เข้าสู่ระบบสำเร็จ";
 
                     echo "<script> location.href='admin/addproduct.php'; </script>";
                     exit;
 
                 }else{
-                    echo "<span style='color:red;'>Please register before login..!</span>";
+                    echo "<span style='color:red;'>กรุณาสมัครก่อน</span>";
                     exit();
                 }
     

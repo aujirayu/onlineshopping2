@@ -26,7 +26,7 @@
   -->
       <div class="logo">
         <a href="" class="simple-text logo-normal">
-          PuneethReddy
+          ร้านสารปรับปรุงดินขี้แดดนาเกลือ
         </a>
       </div>
       <div class="sidebar-wrapper ps-container ps-theme-default" data-ps-id="3a8db1f4-24d8-4dbf-85c9-4f5215c1b29a">
@@ -34,19 +34,19 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.php">
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p>แดชบอร์ด</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="adduser.php">
               <i class="material-icons">person</i>
-              <p>Add User</p>
+              <p>เพิ่มสมาชิก</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="productlist.php">
               <i class="material-icons">list</i>
-              <p>Product List</p>
+              <p>รายการสินค้า</p>
             </a>
             
           </li>
@@ -54,25 +54,25 @@
           <li class="nav-item ">
             <a class="nav-link" href="orders.php">
               <i class="material-icons">library_books</i>
-              <p>Orders</p>
+              <p>ออเดอร์</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="addproduct.php">
               <i class="material-icons">add</i>
-              <p>Add Products</p>
+              <p>เพิ่มสินค้า</p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="manageuser.php">
               <i class="material-icons">edit_user</i>
-              <p>Manage User</p>
+              <p>จัดการสมาชิก</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="../index.php">
               <i class="material-icons">logout</i>
-              <p>Logout</p>
+              <p>ออกจากระบบ</p>
             </a>
           </li>
           <!-- <li class="nav-item active-pro ">
