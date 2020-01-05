@@ -9,13 +9,11 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
 
-      <div class="item active"> 
-     <img src="img/banner1.jpg"  style="width:100%;">
+      <div class="item active">
+        <img src="img/banner1.jpg" . style="width:100%;">
         
-      </div> 
-
-
-  
+      </div>
+      
     </div>
 
     <!-- Left and right controls -->

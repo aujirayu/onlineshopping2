@@ -14,7 +14,7 @@ include "topheader.php";
             <?php  //success message
             if(isset($_POST['success'])) {
             $success = $_POST["success"];
-            echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";
+            echo "<h1 style='color:#0C0'>เพิ่มสินค้าสำเร็จ &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";
             }
             ?></a>
                 </div>
