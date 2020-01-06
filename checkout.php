@@ -121,23 +121,23 @@ span.price {
 					
 					<div class="col-50">
 						<h3>Billing Address</h3>
-						<label for="fname"><i class="fa fa-user" ></i> Full Name</label>
+						<label for="fname"><i class="fa fa-user" ></i> ชื่อ</label>
 						<input type="text" id="fname" class="form-control" name="firstname" pattern="^[a-zA-Z ]+$"  value="'.$row["first_name"].' '.$row["last_name"].'">
-						<label for="email"><i class="fa fa-envelope"></i> Email</label>
+						<label for="email"><i class="fa fa-envelope"></i> อีเมลล์</label>
 						<input type="text" id="email" name="email" class="form-control" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$" value="'.$row["email"].'" required>
-						<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+						<label for="adr"><i class="fa fa-address-card-o"></i> ที่อยู่</label>
 						<input type="text" id="adr" name="address" class="form-control" value="'.$row["address1"].'" required>
-						<label for="city"><i class="fa fa-institution"></i> City</label>
-						<input type="text" id="city" name="city" class="form-control" value="'.$row["address2"].'" pattern="^[a-zA-Z ]+$" required>
+						<label for="city"><i class="fa fa-institution"></i> เขต/อำเภอ</label>
+						<input type="text" id="city" name="city" class="form-control" value="'.$row["address2"].'"  required>
 
 						<div class="row">
 						<div class="col-50">
-							<label for="state">State</label>
+							<label for="state">แขวง/ตำบล</label>
 							<input type="text" id="state" name="state" class="form-control" pattern="^[a-zA-Z ]+$" required>
 						</div>
 						<div class="col-50">
-							<label for="zip">Zip</label>
-							<input type="text" id="zip" name="zip" class="form-control" pattern="^[0-9]{6}(?:-[0-9]{4})?$" required>
+							<label for="zip">รหัสไปรษณีย์</label>
+							<input type="text" id="zip" name="zip" class="form-control"  required>
 						</div>
 						</div>
 					</div>
@@ -155,14 +155,14 @@ span.price {
 						
 						
 						<label for="cname">Name on Card</label>
-						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" required>
+						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" >
 						
 						<div class="form-group" id="card-number-field">
                         <label for="cardNumber">Card Number</label>
-                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" >
                     </div>
 						<label for="expdate">Exp Date</label>
-						<input type="text" id="expdate" name="expdate" class="form-control" pattern="^((0[1-9])|(1[0-2]))\/(\d{2})$" placeholder="12/22"required>
+						<input type="text" id="expdate" name="expdate" class="form-control" pattern="^((0[1-9])|(1[0-2]))\/(\d{2})$" placeholder="12/22">
 						
 
 						<div class="row">
@@ -170,7 +170,7 @@ span.price {
 						<div class="col-50">
 							<div class="form-group CVV">
 								<label for="cvv">CVV</label>
-								<input type="text" class="form-control" name="cvv" id="cvv" required>
+								<input type="text" class="form-control" name="cvv" id="cvv" >
 						</div>
 						</div>
 					</div>
