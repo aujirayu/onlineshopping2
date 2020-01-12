@@ -55,7 +55,7 @@ session_start();
   
             background: #780206;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, #ffffff, #9df5a5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   
         }
@@ -64,7 +64,7 @@ session_start();
   
             background: #870000;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, #ffffff, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
         }
@@ -173,7 +173,7 @@ session_start();
 						<div class="col-md-6">
 							<div class="header-logo">
 								<a href="#" class="logo">
-								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif">
+								<font style="font-style:normal; font-size: 33px;color: #111211;font-family: serif">
                                         สารปรับปรุงดินขี้แดดนาเกลือ
                                     </font>
 									
