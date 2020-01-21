@@ -45,26 +45,26 @@ session_start();
 		<![endif]-->
     <style>
         #navigation {
-          background: #FF4E50;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          background: #ffffff;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
           
         }
         #header {
   
-            background: #780206;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #ffffff, #9df5a5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #006600;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #006600, #006600);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #006600, #006600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   
         }
         #top-header {
               
   
-            background: #870000;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #ffffff, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #ffffff;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #383c38, #383c38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
         }
@@ -174,7 +174,7 @@ session_start();
 							<div class="header-logo">
 								<a href="#" class="logo">
 								<font style="font-style:normal; font-size: 33px;color: #111211;font-family: serif">
-                                        สารปรับปรุงดินขี้แดดนาเกลือ
+                                      <a href="index.php"> <img src="img/logo.png"  style="width:15%;"></a>
                                     </font>
 									
 								</a>
@@ -202,7 +202,7 @@ session_start();
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
 										<span>ตะกร้าสินค้า</span>
-										<div class="badge qty"></div>
+										<div class="badge qty"> 0 </div>
 									</a>
 									<div class="cart-dropdown"  >
 										<div class="cart-list" id="cart_product">

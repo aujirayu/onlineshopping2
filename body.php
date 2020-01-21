@@ -1,3 +1,4 @@
+<br>
 
    <div class="main main-raised">
         <div class="container mainn-raised" style="width:100%;">
@@ -9,11 +10,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
 
-      <div class="item active">
-        <img src="img/banner1.jpg" . style="width:100%;">
+      <div class="item active" align="center">
+        <img src="img/banner1.jpg"  style="width:50%;">
         
       </div>
-      
+      <div class="item" align="center">
+      <img src="img/logo.png"  style="width:25%;">
+      </div>
     </div>
 
     <!-- Left and right controls -->
