@@ -175,7 +175,7 @@ $(document).ready(function(){
 			method:	"POST",
 			data	:$("#login").serialize(),
 			success	:function(data){
-				if(data == "login_success"){
+				if(data == "เข้าสู่ระบบสำเร็จ"){
 					window.location.href = "index.php";
 				}else if(data == "cart_login"){
 					window.location.href = "cart.php";

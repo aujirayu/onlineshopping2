@@ -73,7 +73,7 @@ if(isset($_POST["email"]) && isset($_POST["password"])){
         $count = mysqli_num_rows($run_query);
         
         //if user record is available in database then $count will be equal to 1
-        if($count == 1){
+        if($count != 1){
             $row = mysqli_fetch_array($run_query);
             $_SESSION["uid"] = $row["admin_id"];
             $_SESSION["name"] = $row["admin_name"];
