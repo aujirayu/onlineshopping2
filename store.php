@@ -83,14 +83,7 @@ include 'header.php';
 						<!-- /store products -->
 
 						<!-- store bottom filter -->
-						<div class="store-filter clearfix">
-							<span class="store-qty">Showing 20-100 products</span>
-							<ul class="store-pagination" id="pageno">
-								<li ><a class="active" href="#aside">1</a></li>
-								
-								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-							</ul>
-						</div>
+						
 						<!-- /store bottom filter -->
 					</div>
 					<!-- /STORE -->
@@ -100,7 +93,8 @@ include 'header.php';
 			<!-- /container -->
 		</div>
 </div>
+<br>
 <?php
-include "newslettter.php";
+
 include "footer.php";
 ?>
